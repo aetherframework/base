@@ -19,6 +19,7 @@ class CombinedConfig extends AbstractConfig implements ConfigInterface
      * @var ConfigInterface[]
      */
     protected $_configs;
+
     public function __construct()
     {
         $this->_configs = [];
@@ -32,16 +33,17 @@ class CombinedConfig extends AbstractConfig implements ConfigInterface
      * @throws CannotAddAdapter
      * @returns CombinedConfig
      */
-    public function addConfig(ConfigInterface $config, $priority = null) {
+    public function addConfig(ConfigInterface $config, $priority = null)
+    {
         $priority = is_null($priority) ? count($this->_configs) : $priority;
-        if(isset($this->_configs[$priority])) {
+        if (isset($this->_configs[$priority])) {
             throw new CannotAddAdapter("A config adapter with the priority " . $priority . " was already added");
-        } elseif(is_int($priority)) {
+        } elseif (is_int($priority)) {
             throw new CannotAddAdapter("Priority should be an integer");
         }
         $configs = clone $this->_configs;
         $configs[$priority] = $config;
-        if(!krsort($configs)) {
+        if (!krsort($configs)) {
             throw new CannotAddAdapter("Failed to sort configs by priority");
         }
         $this->_configs = $configs;
@@ -56,9 +58,9 @@ class CombinedConfig extends AbstractConfig implements ConfigInterface
     public function getVariable($variable, $defaultValue)
     {
         $value = $defaultValue;
-        foreach($this->_configs as $config) {
+        foreach ($this->_configs as $config) {
             $value = $config->getVariable($variable, $defaultValue);
-            if($value !== $defaultValue) {
+            if ($value !== $defaultValue) {
                 break;
             }
         }

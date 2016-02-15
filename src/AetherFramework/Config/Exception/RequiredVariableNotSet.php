@@ -10,4 +10,5 @@ namespace AetherFramework\Config\Exception;
 
 
 class RequiredVariableNotSet extends \Exception
-{}
+{
+}

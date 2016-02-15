@@ -69,7 +69,8 @@ class ResponseCodes
         510 => 'Not Extended'
     ];
 
-    static function getResponseCodes() {
+    static function getResponseCodes()
+    {
         return self::$responseCodes;
     }
 }

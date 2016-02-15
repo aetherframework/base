@@ -18,8 +18,9 @@ trait HasLogger
     /**
      * @return LoggerInterface
      */
-    public function getLogger() {
-        if(!isset($this->logger)) {
+    public function getLogger()
+    {
+        if (!isset($this->logger)) {
             $this->logger = new NullLogger();
         }
         return $this->logger;
@@ -28,7 +29,8 @@ trait HasLogger
     /**
      * @param LoggerInterface $logger
      */
-    public function setLogger(LoggerInterface $logger) {
+    public function setLogger(LoggerInterface $logger)
+    {
         $this->logger = $logger;
     }
 }

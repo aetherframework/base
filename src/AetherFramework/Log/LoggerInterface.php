@@ -11,8 +11,8 @@ namespace AetherFramework\Log;
 
 interface LoggerInterface
 {
-    const 
-        LOG_LEVEL_DEBUG =100,
+    const
+        LOG_LEVEL_DEBUG = 100,
         LOG_LEVEL_INFO = 200,
         LOG_LEVEL_NOTICE = 250,
         LOG_LEVEL_WARNING = 300,
