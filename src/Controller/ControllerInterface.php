@@ -31,4 +31,9 @@ interface ControllerInterface
      * @return void
      */
     public function postDispatch();
+
+    /**
+     * @return ResponseInterface
+     */
+    public function getResponse();
 }
