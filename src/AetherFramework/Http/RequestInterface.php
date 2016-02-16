@@ -11,10 +11,10 @@ namespace AetherFramework\Http;
 
 interface RequestInterface
 {
-    const METHOD_POST = 'POST';
-    const METHOD_GET = 'GET';
-    const METHOD_PUT = 'PUT';
-    const METHOD_PATCH = 'PATCH';
+    const VERB_POST = 'POST';
+    const VERB_GET = 'GET';
+    const VERB_PUT = 'PUT';
+    const VERB_PATCH = 'PATCH';
 
     /**
      * Returns the query parameters as a key value pair array
@@ -76,7 +76,7 @@ interface RequestInterface
     /**
      * @return string
      */
-    public function getMethod();
+    public function getVerb();
 
     /**
      * Builds and returns the full url including the protocol and query parameters

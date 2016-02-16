@@ -6,7 +6,7 @@
  * Time: 17:09
  */
 
-namespace AetherFramework\Config\Adapter;
+namespace AetherFramework\Config;
 
 
 use AetherFramework\Config\AbstractConfig;
@@ -38,10 +38,10 @@ class CombinedConfig extends AbstractConfig implements ConfigInterface
         $priority = is_null($priority) ? count($this->_configs) : $priority;
         if (isset($this->_configs[$priority])) {
             throw new CannotAddAdapter("A config adapter with the priority " . $priority . " was already added");
-        } elseif (is_int($priority)) {
+        } elseif (!is_int($priority)) {
             throw new CannotAddAdapter("Priority should be an integer");
         }
-        $configs = clone $this->_configs;
+        $configs = $this->_configs;
         $configs[$priority] = $config;
         if (!krsort($configs)) {
             throw new CannotAddAdapter("Failed to sort configs by priority");
