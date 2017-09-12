@@ -22,4 +22,11 @@ interface ClientInterface
      * @return RequestInterface
      */
     public function getRequest();
+
+    /**
+     * Set request timeout in seconds
+     * @param int $timeout
+     * @return $this
+     */
+    public function setTimeout($timeout);
 }
