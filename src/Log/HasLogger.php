@@ -6,10 +6,10 @@
  * Time: 17:15
  */
 
-namespace AetherFramework\Log;
+namespace AEther\Log;
 
 
-use AetherFramework\Log\Adapter\NullLogger;
+use AEther\Log\Adapter\NullLogger;
 
 trait HasLogger
 {

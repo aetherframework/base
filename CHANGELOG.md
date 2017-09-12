@@ -9,5 +9,5 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Initial set of interfaces, abstract classes and exceptions 
 
 
-[Unreleased]: https://github.com/DelphicOkami/aether-framework-base/compare/v0.0.1...HEAD
-[v0.0.1]: https://github.com/DelphicOkami/aether-framework-base/compare/0cf4dd4...v0.0.1
+[Unreleased]: https://github.com/DelphicOkami/aether/compare/v0.0.1...HEAD
+[v0.0.1]: https://github.com/DelphicOkami/aether/compare/0cf4dd4...v0.0.1

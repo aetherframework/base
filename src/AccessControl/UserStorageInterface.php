@@ -6,7 +6,7 @@
  * Time: 17:11
  */
 
-namespace AetherFramework\AccessControl;
+namespace AEther\AccessControl;
 
 
 interface UserStorageInterface

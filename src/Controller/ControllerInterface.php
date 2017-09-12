@@ -6,10 +6,10 @@
  * Time: 17:17
  */
 
-namespace AetherFramework\Controller;
+namespace AEther\Controller;
 
 
-use AetherFramework\Http\ResponseInterface;
+use AEther\Http\ResponseInterface;
 
 interface ControllerInterface
 {

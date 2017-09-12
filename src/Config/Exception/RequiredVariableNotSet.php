@@ -6,7 +6,7 @@
  * Time: 18:10
  */
 
-namespace AetherFramework\Config\Exception;
+namespace AEther\Config\Exception;
 
 
 class RequiredVariableNotSet extends \Exception

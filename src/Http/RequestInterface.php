@@ -6,7 +6,7 @@
  * Time: 18:57
  */
 
-namespace AetherFramework\Http;
+namespace AEther\Http;
 
 
 interface RequestInterface

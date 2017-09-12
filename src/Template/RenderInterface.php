@@ -6,7 +6,7 @@
  * Time: 18:02
  */
 
-namespace AetherFramework\Template;
+namespace AEther\Template;
 
 
 interface RenderInterface

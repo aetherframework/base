@@ -1,6 +1,6 @@
 <?php
 
-namespace AetherFramework\Serializable;
+namespace AEther\Serializable;
 
 
 interface JsonSerializable extends \JsonSerializable

@@ -6,10 +6,10 @@
  * Time: 17:17
  */
 
-namespace AetherFramework\Controller;
+namespace AEther\Controller;
 
-use AetherFramework\Http\RequestInterface;
-use AetherFramework\Http\ResponseInterface;
+use AEther\Http\RequestInterface;
+use AEther\Http\ResponseInterface;
 
 abstract class AbstractController implements ControllerInterface
 {

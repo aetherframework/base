@@ -6,7 +6,7 @@
  * Time: 17:08
  */
 
-namespace AetherFramework\Exception;
+namespace AEther\Exception;
 
 
 class InvalidBootstrapResponse extends \Exception

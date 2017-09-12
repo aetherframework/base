@@ -6,12 +6,12 @@
  * Time: 17:09
  */
 
-namespace AetherFramework\Config;
+namespace AEther\Config;
 
 
-use AetherFramework\Config\AbstractConfig;
-use AetherFramework\Config\ConfigInterface;
-use AetherFramework\Config\Exception\CannotAddAdapter;
+use AEther\Config\AbstractConfig;
+use AEther\Config\ConfigInterface;
+use AEther\Config\Exception\CannotAddAdapter;
 
 class CombinedConfig extends AbstractConfig implements ConfigInterface
 {

@@ -6,13 +6,13 @@
  * Time: 07:28
  */
 
-namespace AetherFramework\Router;
+namespace AEther\Router;
 
 /**
  * Class Parameter
  * Represents the parts of a path which contain data for the controller
  * Eg. In a path of entry/id/7319 the 3719 is a parameter called id
- * @package AetherFramework\Router
+ * @package AEther\Router
  */
 class Parameter
 {

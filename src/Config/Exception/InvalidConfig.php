@@ -6,7 +6,7 @@
  * Time: 17:03
  */
 
-namespace AetherFramework\Config\Exception;
+namespace AEther\Config\Exception;
 
 
 class InvalidConfig extends \Exception
