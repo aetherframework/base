@@ -6,12 +6,12 @@
  * Time: 17:07
  */
 
-namespace AEther;
+namespace AEtherFramework;
 
 
-use AEther\Controller\ControllerInterface;
-use AEther\Exception\InvalidBootstrapResponse;
-use AEther\Http\ResponseCodes;
+use AEtherFramework\Controller\ControllerInterface;
+use AEtherFramework\Exception\InvalidBootstrapResponse;
+use AEtherFramework\Http\ResponseCodes;
 
 class Base
 {

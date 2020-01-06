@@ -6,7 +6,7 @@
  * Time: 07:19
  */
 
-namespace AEther\AccessControl;
+namespace AEtherFramework\AccessControl;
 
 
 interface AuthorisationInterface

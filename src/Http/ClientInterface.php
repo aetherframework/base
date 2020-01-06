@@ -6,7 +6,7 @@
  * Time: 18:00
  */
 
-namespace AEther\Http;
+namespace AEtherFramework\Http;
 
 
 interface ClientInterface

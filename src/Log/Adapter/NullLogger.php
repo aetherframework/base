@@ -6,10 +6,10 @@
  * Time: 17:17
  */
 
-namespace AEther\Log\Adapter;
+namespace AEtherFramework\Log\Adapter;
 
 
-use AEther\Log\LoggerInterface;
+use AEtherFramework\Log\LoggerInterface;
 
 class NullLogger implements LoggerInterface
 {

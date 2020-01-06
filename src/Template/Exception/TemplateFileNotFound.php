@@ -5,7 +5,7 @@
  * Date: 18/12/15
  * Time: 18:30
  */
-namespace AEther\Template\Exception;
+namespace AEtherFramework\Template\Exception;
 
 class TemplateFileNotFound extends \Exception
 {

@@ -6,7 +6,7 @@
  * Time: 17:16
  */
 
-namespace AEther\Crypto;
+namespace AEtherFramework\Crypto;
 
 
 interface HashingInterface

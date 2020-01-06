@@ -6,7 +6,7 @@
  * Time: 17:13
  */
 
-namespace AEther\Log;
+namespace AEtherFramework\Log;
 
 
 interface LoggerInterface

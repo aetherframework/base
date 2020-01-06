@@ -6,7 +6,7 @@
  * Time: 07:20
  */
 
-namespace AEther\AccessControl;
+namespace AEtherFramework\AccessControl;
 
 
 interface GroupInterface

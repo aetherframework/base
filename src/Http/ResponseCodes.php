@@ -6,7 +6,7 @@
  * Time: 07:48
  */
 
-namespace AEther\Http;
+namespace AEtherFramework\Http;
 
 
 class ResponseCodes

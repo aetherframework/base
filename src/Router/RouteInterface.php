@@ -6,10 +6,10 @@
  * Time: 07:05
  */
 
-namespace AEther\Router;
+namespace AEtherFramework\Router;
 
 
-use AEther\Http\RequestInterface;
+use AEtherFramework\Http\RequestInterface;
 
 interface RouteInterface
 {

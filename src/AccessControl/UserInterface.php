@@ -6,7 +6,7 @@
  * Time: 17:07
  */
 
-namespace AEther\AccessControl;
+namespace AEtherFramework\AccessControl;
 
 interface UserInterface
 {

@@ -6,7 +6,7 @@
  * Time: 17:01
  */
 
-namespace AEther\Config\Exception;
+namespace AEtherFramework\Config\Exception;
 
 
 class CouldNotFindConfigfile extends \Exception

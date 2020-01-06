@@ -1,5 +1,5 @@
 {
-  "name": "delphicokami/aether",
+  "name": "aetherframework/base",
   "license": "LGPL-3.0+",
   "authors": [
     {
@@ -9,7 +9,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Aether\\": "src"
+      "AEtherFramework\\": "src"
     }
   }
 }

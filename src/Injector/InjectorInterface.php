@@ -6,7 +6,7 @@
  * Time: 18:15
  */
 
-namespace AEther\Injector;
+namespace AEtherFramework\Injector;
 
 
 interface InjectorInterface

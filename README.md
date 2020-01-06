@@ -18,9 +18,9 @@ For more concrete implementations of the interfaces there are several packages a
 [example application]: https://github.com/DelphicOkami/aether-hello-world
 [Http Stream]: https://github.com/DelphicOkami/aether-http-stream
 [Config JSON]: https://github.com/DelphicOkami/aether-config-json
-[Config Environment]: https://github.com/DelphicOkami/aether-config-environment# Aether Framework base
+[Config Environment]: https://github.com/DelphicOkami/aether-config-environment# AEtherFramework Framework base
 2
-## What is the Aether framework
+## What is the AEtherFramework framework
 3
 ​
 4

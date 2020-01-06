@@ -6,7 +6,7 @@
  * Time: 17:57
  */
 
-namespace AEther\Http;
+namespace AEtherFramework\Http;
 
 
 interface ResponseInterface

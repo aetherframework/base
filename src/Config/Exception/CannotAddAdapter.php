@@ -6,7 +6,7 @@
  * Time: 18:18
  */
 
-namespace AEther\Config\Exception;
+namespace AEtherFramework\Config\Exception;
 
 
 class CannotAddAdapter extends \Exception
