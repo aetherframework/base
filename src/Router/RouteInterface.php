@@ -20,22 +20,11 @@ interface RouteInterface
 
     public function getPath();
 
-    public function setPath($path);
-
     public function getVerb();
-
-    public function setVerb($httpVerb);
 
     public function getController();
 
-    public function setController($controller);
+    public function getParameters();
 
-    public function addParameter(Parameter $parameter);
-
-    public function getParameterList();
-
-    public function match($path, $httpVerb);
-
-    public function getParameters(RequestInterface $request);
-
+    public function match(RequestInterface $request);
 }

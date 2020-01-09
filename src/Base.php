@@ -23,7 +23,7 @@ class Base
         $controller->dispatch();
         $response = $controller->getResponse();
         foreach($response->getHeaders() as $header=>$value) {
-
+            header($header. ': ' . $value);
         }
         http_response_code($response->getCode());
         echo $response->getBody();

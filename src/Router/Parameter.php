@@ -17,6 +17,9 @@ namespace AEtherFramework\Router;
 class Parameter
 {
     protected $name;
+    protected $value;
+    protected $allowedValues;
+
     /**
      * @var bool
      */
@@ -37,6 +40,42 @@ class Parameter
     public function setName($name)
     {
         $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAllowedValues()
+    {
+        return $this->allowedAllowedValuess;
+    }
+
+    /**
+     * @param mixed $allowedAllowedValuess
+     * @return Parameter
+     */
+    public function setAllowedValues($allowedAllowedValuess)
+    {
+        $this->allowedAllowedValuess = $allowedAllowedValuess;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getValue()
+    {
+        return $this->value;
+    }
+
+    /**
+     * @param mixed $value
+     * @return Parameter
+     */
+    public function setValue($value)
+    {
+        $this->value = $value;
         return $this;
     }
 
