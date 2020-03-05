@@ -247,7 +247,7 @@ class Request implements RequestInterface
         $request = new self();
         $request
             ->setHost($_SERVER['HTTP_HOST'])
-            ->setHttps('on' == $_SERVER['HTTPS'])
+            ->setHttps(isset($_SERVER['HTTPS']) && 'on' == $_SERVER['HTTPS'])
             ->setPath($_SERVER['REQUEST_URI'])
             ->setVerb($_SERVER['REQUEST_METHOD'])
         ;
@@ -266,6 +266,7 @@ class Request implements RequestInterface
                 }
             }
         }
+        return $request;
     }
 }
 

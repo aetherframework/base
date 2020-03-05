@@ -26,5 +26,29 @@ interface RouteInterface
 
     public function getParameters();
 
+    /**
+     * @param $path
+     * @return RouteInterface
+     */
+    public function setPath($path);
+
+    /**
+     * @param $path
+     * @return RouteInterface
+     */
+    public function setVerb($verb);
+
+    /**
+     * @param $path
+     * @return RouteInterface
+     */
+    public function setController($controller);
+
+    /**
+     * @param $path
+     * @return RouteInterface
+     */
+    public function addParameters(Parameter $parameter);
+
     public function match(RequestInterface $request);
 }
