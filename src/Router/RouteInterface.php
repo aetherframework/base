@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: delphicokami
- * Date: 20/01/16
- * Time: 07:05
- */
-
 namespace AEtherFramework\Router;
 
 
@@ -30,25 +23,25 @@ interface RouteInterface
      * @param $path
      * @return RouteInterface
      */
-    public function setPath($path);
+    public function setPath($path): RouteInterface;
 
     /**
      * @param $path
      * @return RouteInterface
      */
-    public function setVerb($verb);
+    public function setVerb($verb): RouteInterface;
 
     /**
      * @param $path
      * @return RouteInterface
      */
-    public function setController($controller);
+    public function setController($controller): RouteInterface;
 
     /**
      * @param $path
      * @return RouteInterface
      */
-    public function addParameters(Parameter $parameter);
+    public function addParameters(Parameter $parameter): RouteInterface;
 
-    public function match(RequestInterface $request);
+    public function match(RequestInterface $request): bool;
 }

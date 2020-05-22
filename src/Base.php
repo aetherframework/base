@@ -1,13 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: delphicokami
- * Date: 16/02/16
- * Time: 17:07
- */
-
 namespace AEtherFramework;
-
 
 use AEtherFramework\Controller\ControllerInterface;
 use AEtherFramework\Exception\InvalidBootstrapResponse;
@@ -20,7 +12,9 @@ class Base
         if(!$controller instanceof ControllerInterface) {
             throw new InvalidBootstrapResponse('Result from boostrap function was not a Controller');
         }
+        $controller->preDispatch();
         $controller->dispatch();
+        $controller->postDispatch();
         $response = $controller->getResponse();
         foreach($response->getHeaders() as $header=>$value) {
             header($header. ': ' . $value);
